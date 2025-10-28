@@ -9,6 +9,7 @@
 body {
   background-color: #fff8ea;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .blob-container {
@@ -87,10 +88,11 @@ body {
   display: flex;
   position: relative;
   justify-content: center;
+  flex-direction: column;
 }
 
 .left_Section {
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,7 +124,7 @@ body {
   font-family: "Allan", serif;
   text-transform: uppercase;
   letter-spacing: 15px;
-  font-size: clamp(48px, 12vw, 120px);
+  font-size: clamp(48px, 12vw, 8em);
   font-weight: 700;
   line-height: 0.9;
   margin: 0;
@@ -134,9 +136,21 @@ body {
   -webkit-text-stroke: 3px #473636;
   text-transform: uppercase;
   color: transparent;
-  text-shadow: 0 2px 6px rgba(71, 54, 54, 0.08);
 }
 
+.SCROLL {
+  display: flex;
+  height: 10vh;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about_Title {
+  font-size: 8em;
+  font-family: "Poppins", sans-serif;
+  color: #473636;
+}
 
 
 /* responsive: stack sections on narrow viewports */

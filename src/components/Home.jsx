@@ -25,6 +25,9 @@ const Home = () => {
             Pradesh , (IN)
           </p>
         </div>
+        <div className="SCROLL">
+            <h4>Down</h4>
+        </div>
       </div>
     </>
   );
