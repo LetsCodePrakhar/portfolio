@@ -1,18 +1,31 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
+import React from 'react'
+import Header from './components/header/Header'
+import Home from './components/home/Home'
+import About from './components/about/About'
+import Skills from './components/skills/Skills'
+import Services from './components/services/Services'
+import Qualifications from './components/qualifications/Qualifications'
+import Contact from './components/contact/Contact'
+import Work from './components/work/Work'
 import './App.css'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-    <Navbar id="nav_bar"></Navbar>
-    <Home/>
-    <About/>
-    </>
+   <>
+    <div className="App">
+      <Header />
+      <main className="main">
+        <Home />
+        <About />
+        <Skills />
+        <Services />
+        <Qualifications />
+        <Work/>
+        <Contact />
+      </main>
+    </div>
+   </>
   )
 }
 
-export default App
+export default App 

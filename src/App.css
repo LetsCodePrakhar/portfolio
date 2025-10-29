@@ -1,167 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /*========== Font weight ==========*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
+/*=============== BASE ===============*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff8ea;
-  font-family: "Poppins", sans-serif;
+html {
   scroll-behavior: smooth;
 }
 
-.blob-container {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
 }
 
-.blob-main {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: transparent;
-  user-select: none;
-  cursor: default;
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
-.blob {
-  position: absolute;
-  will-change: transform;
-  transform: translate(-50%, -50%);
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 }
 
-.inner-dot {
-  position: absolute;
-}
-
-
-.navbar_Container {
-  display: flex;
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-  justify-content: space-between;
-  padding: 2vh;
-  align-items: center;
-  background-color: #fff8ea;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-}
-
-.nav_Title {
-  color: #473636;
-}
-
-.nav_TabsContainer {
-  width: 23%;
-}
-
-.nav_Tabs {
+ul {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
 }
 
-.nav_Links a {
-  color: #9e7676;
+a {
   text-decoration: none;
-  font-size: 19px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
-.nav_Links a:hover {
-  color: #594545;
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
-.home_Container {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  flex-direction: column;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.left_Section {
-  min-height: 85vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/*=============== LAYOUT ===============*/
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display: inline-flex;
   align-items: center;
-  padding: 2rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  gap: 1rem;
-  color: #473636;
-  letter-spacing: 15px;
 }
 
-.left_Section h3 {
-  font-size: clamp(28px, 4.5vw, 50px);
-  line-height: 1.05;
-  margin: 0;
-}
-
-.left_Section p {
-  font-size: clamp(16px, 2.2vw, 30px);
-  line-height: 1.35;
-  margin-top: 0.5rem;
-  color: #6b4f4f;
-  /* max-width: 60ch; */
-}
-
-.home_Name {
-  font-family: "Allan", serif;
-  text-transform: uppercase;
-  letter-spacing: 15px;
-  font-size: clamp(48px, 12vw, 8em);
-  font-weight: 700;
-  line-height: 0.9;
-  margin: 0;
-  color: #473636;
-  width: 100%;
-}
-
-.stroke_Text {
-  -webkit-text-stroke: 3px #473636;
-  text-transform: uppercase;
-  color: transparent;
-}
-
-.SCROLL {
-  display: flex;
-  height: 10vh;
-  text-align: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.about_Title {
-  font-size: 8em;
-  font-family: "Poppins", sans-serif;
-  color: #473636;
-}
-
-
-/* responsive: stack sections on narrow viewports */
-@media (max-width: 768px) {
-  .left_Section {
-    padding: 1.25rem;
-    gap: 0.75rem;
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
   }
 
-  .home_Name {
-    letter-spacing: 3px;
-    font-size: clamp(36px, 16vw, 80px);
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
+
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
   }
 }
