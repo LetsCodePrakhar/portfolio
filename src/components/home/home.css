@@ -62,7 +62,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 0 0 9px rgba(0, 225, 255, 0.3);
     order: 1;
     justify-content: center;
     width: 300px;
@@ -110,6 +110,17 @@
 .home__scroll-arrow{
     font-size: 1.25rem;
     color: var(--title-color);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1920px) {
+.home__container{
+    height: 75vh;
+}
+.home__scroll{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 }
 
 @media screen and (max-width: 992px) {

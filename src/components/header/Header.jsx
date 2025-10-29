@@ -32,8 +32,8 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="nav_logo">
-          Atharva
+        <a href="index.html" className="nav_logo logo_link">
+          Prakhar
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list">
@@ -67,18 +67,6 @@ const Header = () => {
                 }
               >
                 <i className="uil uil-file-alt nav__icon"></i>Skills
-              </a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="#services"
-                className={
-                  activeNav === "#services"
-                    ? "nav__link active-link"
-                    : "nav__link"
-                }
-              >
-                <i className="uil uil-briefcase-alt nav__icon"></i>Services
               </a>
             </li>
             <li className="nav__item">

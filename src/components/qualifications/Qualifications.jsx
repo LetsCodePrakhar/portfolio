@@ -7,7 +7,7 @@ const Qualifications = () => {
   };
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualification">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My Personal journey</span>
 
@@ -45,14 +45,26 @@ const Qualifications = () => {
                 : "qualification__content"
             }
           >
+            {/* SSC  */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">SSC (GPA : 9.0)</h3>
+                <h3 className="qualification__title">SSC (score : 78.2%)</h3>
                 <span className="qualification__subtitle">
-                  Shri Guru Tegh Bahadur Academy
+                  Macro Vision Academy
+                  <p>
+                    <i className="uil uil-map">
+                      <a
+                        href="https://shorturl.at/6Y7M8"
+                        target="_blank"
+                        className="qualification_location"
+                      >
+                        Burhanpur(M.P)
+                      </a>
+                    </i>
+                  </p>
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 07/2018 - 04/2019
+                  <i className="uil uil-calendar-alt"></i> 07/2019 - 04/2020
                 </div>
               </div>
 
@@ -62,6 +74,7 @@ const Qualifications = () => {
               </div>
             </div>
 
+            {/* hsc  */}
             <div className="qualification__data">
               <div></div>
 
@@ -70,24 +83,47 @@ const Qualifications = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title"> HSC (GPA : 9.5)</h3>
+                <h3 className="qualification__title"> HSC (score: 83.2%)</h3>
                 <span className="qualification__subtitle">
-                  Shri Guru Tegh Bahadur Academy
+                  Macro Vison Academy
+                  <p>
+                    <i className="uil uil-map">
+                      <a
+                        href="https://shorturl.at/6Y7M8"
+                        target="_blank"
+                        className="qualification_location"
+                      >
+                        Burhanpur(M.P)
+                      </a>
+                    </i>
+                  </p>
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 07/2019 - 04/2021
+                  <i className="uil uil-calendar-alt"></i> 07/2020 - 04/2021
                 </div>
               </div>
             </div>
 
+            {/* B.Tech  */}
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">B.Tech</h3>
                 <span className="qualification__subtitle">
-                  Parul University
+                  VIT Bhopal University
+                  <p>
+                    <i className="uil uil-map">
+                      <a
+                        href="https://shorturl.at/5zUfE"
+                        target="_blank"
+                        className="qualification_location"
+                      >
+                        Bhopal(M.P)
+                      </a>
+                    </i>
+                  </p>
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2021 - Present
+                  <i className="uil uil-calendar-alt"></i> 2021 - 2025
                 </div>
               </div>
 
@@ -114,13 +150,13 @@ const Qualifications = () => {
               </div>
               <div>
                 <h3 className="qualification__title">
-                  Postman API Fundamentals Student Expert
+                  Android Development
                 </h3>
                 <span className="qualification__subtitle">
-                  Completed the certification
+                  @SmartInternz
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 01/2023
+                  <i className="uil uil-calendar-alt"></i> 09/2023 - 02/2024
                 </div>
               </div>
             </div>
@@ -128,10 +164,10 @@ const Qualifications = () => {
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">
-                  First Open Source Conribution
+                  Javascript
                 </h3>
                 <span className="qualification__subtitle">
-                  FreeCodeCamp Documentation
+                  Certification By : UDEMY
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i> 10/2022
@@ -152,10 +188,10 @@ const Qualifications = () => {
               </div>
               <div>
                 <h3 className="qualification__title">
-                  Hero Campus Challenge S8 & Flipkart GRID 2.0
+                  ReactJS
                 </h3>
                 <span className="qualification__subtitle">
-                  Certificate of Participation
+                  Certification By: UDEMY
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i> 01/2023
@@ -164,11 +200,9 @@ const Qualifications = () => {
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">
-                  Hackvengers 2023
-                </h3>
+                <h3 className="qualification__title">MERN Stack Development</h3>
                 <span className="qualification__subtitle">
-                  2nd Runner ups in this national level hackathon
+                  Certification By UDEMY
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i> 03/2023

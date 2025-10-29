@@ -6,14 +6,11 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --hue: 0;
-  --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
+  --title-color: #00ADB5;
+  --title-color-dark: #00ADB5;
+  --text-color: #EEEEEE;
+  --body-color: #0C0C0C;
+  --container-color: #393E46;
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;

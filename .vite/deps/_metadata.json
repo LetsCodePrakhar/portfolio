@@ -1,25 +1,34 @@
 {
-  "hash": "64d31f0c",
+  "hash": "6fc94e24",
   "configHash": "e861d6d2",
-  "lockfileHash": "7d7123c4",
-  "browserHash": "4339535e",
+  "lockfileHash": "9c190c91",
+  "browserHash": "b6207a1d",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "25ef0f8d",
+      "fileHash": "abce20c9",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "76eed625",
+      "fileHash": "60bb3974",
       "needsInterop": true
+    },
+    "@emailjs/browser": {
+      "src": "../../node_modules/@emailjs/browser/es/index.js",
+      "file": "@emailjs_browser.js",
+      "fileHash": "1747fe0a",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-TDVGPZLM": {
-      "file": "chunk-TDVGPZLM.js"
+    "chunk-J6KE6MJH": {
+      "file": "chunk-J6KE6MJH.js"
+    },
+    "chunk-BUSYA2B4": {
+      "file": "chunk-BUSYA2B4.js"
     }
   }
 }

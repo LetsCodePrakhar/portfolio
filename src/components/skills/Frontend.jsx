@@ -38,7 +38,7 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Chakra UI</h3>
+              <h3 className="skills__name">Aceternity UI</h3>
               <span className="skills__level">Intermediate</span>
             </div>
           </div>
@@ -77,8 +77,8 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Git/GitHub</h3>
-              <span className="skills__level">Intermediate</span>
+              <h3 className="skills__name">Swift UI</h3>
+              <span className="skills__level">Beginner</span>
             </div>
           </div>
         </div>

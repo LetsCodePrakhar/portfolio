@@ -1,15 +1,17 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+
 const Contact = () => {
+
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_ipsh5uk",
-      "template_8hsyt8y",
+      "service_dtjzvwe",
+      "template_vcngdui",
       form.current,
       "0JVtTVYN2tlBWZoaQ"
     );
@@ -31,7 +33,7 @@ const Contact = () => {
 
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">
-                deshmukhsambhajirao9@gmail.com
+                official@prakharsaxena@gmail.com
               </span>
 
               <a
@@ -47,25 +49,13 @@ const Contact = () => {
               <i className="bx bxl-whatsapp contact__card-icon"></i>
 
               <h3 className="contact__card-title">WhatsApp</h3>
-              <span className="contact__card-data">+91 81035XXXXX</span>
+              <span className="contact__card-data">+91 91xxxxxx81</span>
 
               <a
-                href="https://api.whatsapp.com/send?phone=918103548618&text=Hello, more information!"
+                href="https://api.whatsapp.com/send?phone=9171179981&text=Hello, more information!"
                 className="contact__button" target="_blank"
               >
                 Write me{" "}
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-
-            <div className="contact__card">
-              <i className="bx bxl-telegram contact__card-icon"></i>
-
-              <h3 className="contact__card-title">Telegram</h3>
-              <span className="contact__card-data">@ultra_doge</span>
-
-              <a href="https://t.me/ultra_doge" className="contact__button" target="_blank">
-                Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
